@@ -1,1 +1,26 @@
+/* Make arrows visible like the WP version */
+.hero-slider .swiper-button-next,
+.hero-slider .swiper-button-prev {
+  color: #fff; /* arrow color */
+  width: 46px;
+  height: 46px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.hero-slider .swiper-button-next::after,
+.hero-slider .swiper-button-prev::after {
+  font-size: 28px;
+}
+
+/* Optional: keep arrows above overlay */
+.hero-slider .swiper-button-next,
+.hero-slider .swiper-button-prev {
+  z-index: 30;
+}
+
+/* Ensure no global rule can force full width */
+.hero-slider .cta-btn {
+  display: inline-flex !important;
+  width: auto !important;
+}
 

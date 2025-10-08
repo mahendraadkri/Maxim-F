@@ -1,13 +1,16 @@
 import React from "react";
 // import HeroSlider from "../components/HeroSlider";
-import HeroSlider from "../components/HeroSlider";
+// import AboutSection from "../components/AboutSection";
+// import StatementOverlay from "../components/StatementOverlay";
+import HomeSection from "../components/HomeSection";
 
-const Home = () => {
+export default function Home() {
   return (
-    <main>
-      {/* If/when Navbar returns, restore top padding */}
-      <HeroSlider />
+    <main className="relative">
+      <HomeSection />
+      {/* <HeroSlider />
+      <AboutSection />
+      <StatementOverlay /> */}
     </main>
   );
-};
-export default Home;
+}
